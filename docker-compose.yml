@@ -1,0 +1,27 @@
+version: '3'
+
+services:
+  dev:
+    container_name: bet-api-dev
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    volumes:
+      - ./:/app
+    ports:
+      - '8888:8080'
+
+  prod:
+    container_name: bet-api-prod
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    volumes:
+      - ./:/app
+    ports:
+      - '3232:8080'
+      
+
+
+
+
