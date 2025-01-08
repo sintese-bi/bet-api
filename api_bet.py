@@ -170,7 +170,7 @@ def infoleague():
     return json.dumps(final_dict,indent=4)
     
 
-
+#Roda o projeto
 if __name__ == '__main__':
     app.run(host="0.0.0.0", port=8080, debug=True, threaded=True, processes=1)
     # app.run(host="104.131.163.240", port=8080)
