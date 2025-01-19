@@ -11,8 +11,8 @@ from flask_caching import Cache
 import re
 from datetime import datetime, timedelta
 
-db_password = "2023@Tag"
-#db_password = "saulodados"
+db_password = pwrd_env
+
 db_password_encoded = quote_plus(db_password)
 
 
