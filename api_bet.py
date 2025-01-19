@@ -12,12 +12,12 @@ import re
 from datetime import datetime, timedelta
 
 db_password = pwrd_env
-
+db_ip = db_env
 db_password_encoded = quote_plus(db_password)
 
 
 # Atualize a string de conexão com o banco de dados substituindo a senha codificada
-DB_CONFIG = f"postgresql://postgres:{db_password_encoded}@159.65.42.225:5432/BET365"
+#DB_CONFIG = string env
 #DB_CONFIG = f"postgresql://postgres:{db_password_encoded}@134.209.223.235/comercial_BI"
 
 app = Flask(__name__)
