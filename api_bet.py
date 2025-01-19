@@ -34,9 +34,7 @@ CORS(app)
 VERSION = "v2"
 
 
-def connectionDataBase():
-    connection = pg.connect(user="postgres", password="2023@Tag", host="159.65.42.225", port=5432, database="BET365")
-    return connection
+
 
 
 def get_games(liga):
